@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThunderThread</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div class="navBar2"> <!-- Customer Nav bar -->
+        <div class="left-items">
+            <p>ThunderThread</p>
+        </div>
+        <div class="collapseable">
+            <p class="left-items-c">TechPunk Official CyberFashion</p>
+            <div class="right-items">
+                <p><a href="index.html">Home</a></p>
+                <p><a href="News.html">News</a></p>
+                <p><a href="Contact.html">Contact</a></p>
+                <p><a href="About.html">About</a></p>
+                <p class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></p>
+            </div>
+        </div>
+        
+
+    </div> <!-- Customer Nav bar -->
+    <nav> <!-- DevSlopoes Nav bar -->
+        <ul class="topnav" id="dropDownClick">
+            <li class="logo">ThunderThread2</li>
+            <li class="desc">TechPunk Official CyberFashion</li>
+            <li class="topnav-right"><a href="#news">news</a></li>
+            <li class="topnav-right"><a href="#contact">contact</a></li>
+            <li class="topnav-right"><a href="#about">about</a></li>
+            <li class="topnav-right"><a href="#home">Home</a></li>
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+        </ul>
+    </nav> <!-- DevSlopoes Nav bar -->
+    <div class="grid">
+        <div class="container">
+            <img class="model" src="CPI.jpg" alt="CyberPunk_Model_Image">
+        </div>
+        <div class="container">
+            <img class="model" src="CPI.jpg" alt="CyberPunk_Model_Image">
+        </div>
+    </div>
+    <div class="grid">
+        <div class="container">
+            <img class="model" src="CPI.jpg" alt="CyberPunk_Model_Image">
+        </div>
+        <div class="container">
+            <img class="model" src="CPI.jpg" alt="CyberPunk_Model_Image">
+        </div>
+    </div>
+
+    <script>
+        function dropdownMenu() {
+            var x = document.getElementById("dropDownClick");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+                // change topnav to topnav.responsive
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+</html>

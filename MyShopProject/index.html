@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FlashThread - Home</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="cart.js"></script>
+    </head>
+    <body class="site-wrapper">
+
+        <!-- top navigation bar -->
+        <div class="top-nav-wrapper">
+            <h1 class="nav-label-left">FlashThread</h1>
+            <!--<h1 class="nav-label-left desktop-only">Motto</h1>-->
+            <h1 class="desktop-only"><a href="index.html">Home</a></h1>
+            <h1 class="desktop-only"><a href="products.html">Products</a></h1>
+            <!-- <h1 class="desktop-only"><a href="details.html">Details</a></h1> -->
+            <h1 class="desktop-only"><a href="cart.html">Cart</a></h1>
+            <h1 class="desktop-only"><a href="admin.html">Login</a></h1>
+            <button class="mobile-only" onclick="onMenuClick()">
+                &#9776;
+            </button>
+            <div class="disabled" id="mobile-menu">
+                <div class="card mobile-menu-list">
+                    <div class="mobile-menu-link">
+                        <p class="no-margin"><a href="index.html">Home</a></p>
+                    </div>
+                    <div class="mobile-menu-link">
+                        <p class="no-margin" ><a href="products.html">Products</a></p>
+                    </div>
+                    <div class="mobile-menu-link">
+                        <p class="no-margin" ><a href="details.html">Details</a></p>
+                    </div>
+                    <div class="mobile-menu-link">
+                        <p class="no-margin"><a href="cart.html">Cart</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+             
+        
+        <!-- Main content area -->
+        <div class="main-content-wrapper">
+            <div class="header">
+                <h2>Welcome to FlashThread!</h2>
+                <p>Enything for CyperPunk Fashion needs!</p>
+            </div>
+            <div class="gridItem-model">
+                <p>Model 1</p>
+                <img class="img_Model" src="https://cdn.shopify.com/s/files/1/0105/2898/1077/files/Cyberpunk_Fashion_-_Clotechnow_480x480.jpg?v=1655221452" alt="Model hands crossed">
+            </div>
+            <div class="gridItem-model">
+                <p>Model 2</p>
+                <img class="img_Model" src="https://media.shilpaahuja.com/wp-content/uploads/2022/09/Cyberpunk-Fashion-Model-Hypertech-Glasses-and-Head-Gear.jpg" alt="Model Goggles">
+            </div>
+            <div class="gridItem-model">
+                <p>Model 3</p>
+                <img class="img_Model" src="https://i.pinimg.com/originals/ab/66/bb/ab66bbeb3f321d52a3c78dee122d07fc.jpg" alt="Model tactical gear">
+            </div>
+            <div class="gridItem-model">
+                <p>Model 4</p>
+                <img class="img_Model"  src="https://storage.googleapis.com/dream-machines-output/3446fb4f-3de8-4b57-9148-8cb4e4f871a1/0_0.png" alt="Cyber Model">
+            </div>
+            <div class="gridItem-model">
+                <p>Model 5</p>
+                <img class="img_Model" src="https://image.lexica.art/md2/1378e5c6-cf00-4257-8664-7a9d49f9b2f3" alt="Model high-class-Mas">
+            </div>
+            <div class="gridItem-model">
+                <p>Model 6</p>
+                <img class="img_Model" src="https://image.lexica.art/md2/063d1bc9-4fe3-4cca-b323-70d2e5dce987" alt="Model high-class-Fem">
+            </div>
+
+        </div>
+
+        <!-- Footer area -->
+        <div class="footer-wrapper">
+            <h1 class="nav-label-left">www.flashthread.com</h1>
+            <p >copyright 2023</p>
+        </div>
+        <script>
+            function onMenuClick() {
+                var x = document.getElementById("mobile-menu");
+                if (x.className.includes("disabled")) {
+                    x.className = "enabled"
+                } else {
+                    x.className = "disabled"
+                }
+            }
+        </script>
+    </body>
+</html>
