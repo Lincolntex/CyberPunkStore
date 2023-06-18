@@ -1,0 +1,7 @@
+.main-content-wrapper {
+    padding: 0 2rem 0 2rem;
+    margin: 1rem 5rem 1rem 5rem;
+    width: calc(100vw - 15rem);
+    overflow: hidden;
+    height: fit-content;
+}
