@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FlashThread - Cart</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="cartListeners.js" type="text/javaScript"></script>
+        <script src="RenderCart.js" type="text/javaScript"></script>
+    </head>
+    <body class="site-wrapper">
+
+        <!-- top navigation bar -->
+        <div class="top-nav-wrapper">
+            <h1 class="nav-label-left">FlashThread</h1>
+            <!--<h1 class="nav-label-left desktop-only">Motto</h1>-->
+            <h1 class="desktop-only"><a href="index.html">Home</a></h1>
+            <h1 class="desktop-only"><a href="products.html">Products</a></h1>
+            <!-- <h1 class="desktop-only"><a href="details.html">Details</a></h1> -->
+            <h1 class="desktop-only"><a href="cart.html">Cart</a></h1>
+            <h1 class="desktop-only"><a href="admin.html">Login</a></h1>
+            <button class="mobile-only" onclick="onMenuClick()">
+                &#9776;
+            </button>
+            <div class="disabled" id="mobile-menu">
+                <div class="card mobile-menu-list">
+                    <div class="mobile-menu-link">
+                        <p class="no-margin"><a href="index.html">Home</a></p>
+                    </div>
+                    <div class="mobile-menu-link">
+                        <p class="no-margin" ><a href="products.html">Products</a></p>
+                    </div>
+                    <div class="mobile-menu-link">
+                        <p class="no-margin" ><a href="details.html">Details</a></p>
+                    </div>
+                    <div class="mobile-menu-link">
+                        <p class="no-margin"><a href="cart.html">Cart</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+             
+        
+        <!-- Main content area -->
+        <div class="main-content-wrapper">
+            <div class="header">
+                <h1>Ready to Checkout?</h1>
+                <p>Please see your items listed below</p>
+            </div>
+            <div class="checkout">
+                <table id="cart">                
+                </table>
+                <div class="totals">
+                    <table >
+                        <tr>
+                            <td>Subtotal:</td>
+                            <td id="subTotal">$0</td>
+                        </tr>
+                        <tr>
+                            <td>Tax:</td>
+                            <td id="tax">$0</td>
+                        </tr>
+                        <tr>
+                            <td>Shipping:</td>
+                            <td id="shipping">$0</td>
+                        </tr>
+                        <tr>
+                            <td>Total:</td>
+                            <td id="total">$0</td>
+                        </tr>                       
+                    </table>
+                    <div class="checkoutBtn">
+                        <button onclick="checkout()">Checkout</button>
+                    </div>
+                    
+                </div>
+            </div>
+            
+
+        </div>
+
+        <!-- Footer area -->
+        <div class="footer-wrapper">
+            <h1 class="nav-label-left">www.flashthread.com</h1>
+            <p >copyright 2023</p>
+        </div>
+        <script>
+            function onMenuClick() {
+                var x = document.getElementById("mobile-menu");
+                if (x.className.includes("disabled")) {
+                    x.className = "enabled"
+                } else {
+                    x.className = "disabled"
+                }
+            }
+        </script>
+    </body>
+</html>
