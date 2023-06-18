@@ -1,0 +1,25 @@
+.top-nav-wrapper {
+    width: 100vw;
+    height: 4rem;
+
+    /* flex */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+
+    /* debug*/
+    border-bottom: 3px solid #E93CAC;
+    background-color: #00ff9f;
+}
+
+.desktop-only {
+    display: inherit;
+    text-decoration: none;
+}
+
+.nav-label-left {
+    flex-grow: 10;
+}
