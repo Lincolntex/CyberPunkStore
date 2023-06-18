@@ -1,0 +1,461 @@
+/*############## Defautlts #################*/
+body{
+    background-color:#091833;
+}
+
+
+
+
+/* ######### MOBILE Scratch ########## */
+.site-wrapper {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.top-nav-wrapper {
+    width: calc(100vw - 4rem);
+    height: 4rem;
+    padding: 0 2rem 0 2rem;
+
+    /* flex */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+
+    /* debug*/
+    border-bottom: 3px solid #E93CAC;
+    background-color: #00ff9f;
+
+}
+
+.main-content-wrapper {
+    margin: 1rem 5rem 1rem 5rem;
+    padding: 0 5rem 0 5rem;
+    width: calc(100vw - 21rem);
+    height: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+
+    /* debug */
+    border: 3px solid #E93CAC;
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ec7d26b1-d557-47c1-a877-6050004d2fc2/dbb7hcs-1f9e8f0a-c4c7-4fc9-baf6-9e075ce86e30.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2VjN2QyNmIxLWQ1NTctNDdjMS1hODc3LTYwNTAwMDRkMmZjMlwvZGJiN2hjcy0xZjllOGYwYS1jNGM3LTRmYzktYmFmNi05ZTA3NWNlODZlMzAuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.-7-iEaeDDddcIw8RSKsKr7t8JpLF4DYv6ZQzuOVtQ28);
+}
+
+.header {
+    margin: 1rem 2rem 1rem 2rem;
+    padding: 0 5rem 0 5rem;
+    width: calc(100vw - 21rem);
+    height: 10rem;
+    text-align: center;
+    white-space: normal;
+
+    /* debug*/
+    border: 1px solid black;
+    background-color: #00ff9f;
+    border: 3px solid #E93CAC;
+}
+
+.gridItem {
+    margin: 2rem 2rem 2rem 2rem;
+    padding: 0 5rem 1rem 5rem;
+    /* width: fit-content;
+    height: fit-content; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 10rem;
+    max-height: 23rem;
+
+    /* debug*/
+    background-color: #00ff9f;
+    border: 3px solid #E93CAC;
+}
+
+.gridItem-model {
+    margin: 2rem 2rem 2rem 2rem;
+    padding: 0 5rem 0 5rem;
+    width: 20rem;
+    height: 40rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    /* debug*/
+    border: 1px solid black;
+    background-color: #00ff9f;
+    border: 3px solid #E93CAC;
+}
+
+.img_Model {
+    height: 30rem;
+    width: 21rem;
+}
+
+.img_Product {
+    height: 10rem;
+    width: 10rem;
+    padding-bottom: 3px;
+}
+
+.footer-wrapper {
+    padding: 0 2rem 2rem 2rem;
+    width: calc(100vw - 4rem);
+    margin-top: 1rem;
+    height: 5rem;
+
+    /* debug */
+    border: 1px solid green;
+    background-color: #00ff9f;
+    border-top: 3px solid #E93CAC;
+    color: #091833;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+}
+
+.footer-wrapper p {
+    justify-content: flex-start;
+}
+
+.nav-label-left {
+    flex-grow: 10;
+}
+
+.disabled {
+    display: none;
+}
+
+.mobile-only {
+    display: none;
+}
+
+.desktop-only {
+    display: inherit;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #091833;
+}
+
+a:hover {
+    transition: 0.2s;
+    background-color:#201547;
+    color:#E93CAC;
+    text-decoration: none;
+}
+
+.no-margin {
+    margin: 0;
+}
+/* Mobile menu Menus*/
+
+    /* card */
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 5px;
+    background-color: #00ff9f;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 1rem;
+}
+
+/* Cart */
+
+.checkout {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 5px;
+    background-color: #00ff9f;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 2rem auto;
+    border: 3px solid #E93CAC;
+    width: fit-content;
+    overflow:auto;
+}
+
+.checkoutBtn {
+    display: flex;
+    justify-content: flex-end;
+    margin: 2px;
+    padding:10px;
+}
+
+.btn-remove {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 4px;
+    width: 3rem;    
+    font-size: 10px;
+
+}
+
+.itemName {
+    margin: 13px 0px 1px 0px ;
+}
+.totals {
+    border-top: 3px solid #E93CAC;
+}
+
+table {
+    width: 100%;
+}
+
+.cart-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th {
+    text-align: left;
+    padding: 1rem;
+    color: #E93CAC;
+    background: #091833;
+    font-weight: normal;
+    overflow: hidden;
+    width: fit-content;
+}
+
+td {
+    padding: 1rem 1rem;
+}
+
+td input {
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+
+}
+
+td a {
+    color: #091833;
+    font-size: 12px;
+}
+
+td img {
+    height: 5rem;
+    width: 5rem;
+    margin: 1rem;
+}
+
+.total-price {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table {
+    border-top: 3px solid #E93CAC;
+    width: 100%;
+    max-width: 25rem;
+}
+
+td:last-child {
+    text-align: right;
+}
+th:last-child {
+    text-align: right;
+}
+
+/* login */
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color:#091833;
+    color:#E93CAC;
+    padding: 14px 20px;
+    margin: 16px 0;
+    border: 3px;
+    border-color: #E93CAC;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 5px 5px #999;
+    
+  }
+  
+  /* button:hover {
+    opacity: 0.8;
+  } */
+
+  button:active {
+    background-color: #8093F1;
+    color: black;
+    transition: 0.2s;
+    box-shadow: 5px 5px #666;
+    transform: translateY(3px)
+    
+    
+  }
+
+  
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+    color: white;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 30%;
+    border-radius: 10%;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    /* background-color: #fefefe; */
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+
+  /* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+     
+/* mobile adjustemnts */
+
+.mobile-menu-link {
+    width: 100%;
+    height: 2rem;
+}
+
+.mobile-menu-link:hover {
+    transition: 0.2s;
+    background-color:#d600ff;
+    color:yellowgreen;
+    text-decoration: none;
+
+}
+
+.mobile-menu-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0.2rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ######### MOBILE Devslopes ########## */
+
+@media screen and (max-width: 850px) {
+    .mobile-only {
+        /*display: inherit;*/
+        display: flex;
+        justify-content: flex-end;
+        width: fit-content;
+    }
+
+    .desktop-only {
+        display: none
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 3rem;
+        right: 1rem;
+        width: 8rem;
+    }
+
+    .main-content-wrapper {
+        padding: 0 2rem 0 2rem;
+        margin: 1rem 5rem 1rem 5rem;
+        width: calc(100vw - 15rem);
+        overflow: hidden;
+        height: fit-content;
+    }
+
+    .cart-info p {
+        display: none;
+        flex-wrap: wrap;
+    }
+    
+    .cart-info {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FlashThread - Products</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="cartListeners.js" type="text/javaScript"></script>
+    </head>
+    <body class="site-wrapper">
+
+        <!-- top navigation bar -->
+        <div class="top-nav-wrapper">
+            <h1 class="nav-label-left">FlashThread</h1>
+            <!--<h1 class="nav-label-left desktop-only">Motto</h1>-->
+            <h1 class="desktop-only"><a href="index.html">Home</a></h1>
+            <h1 class="desktop-only"><a href="products.html">Products</a></h1>
+            <!-- <h1 class="desktop-only"><a href="details.html">Details</a></h1> -->
+            <h1 class="desktop-only"><a href="cart.html">Cart</a></h1>
+            <h1 class="desktop-only"><a href="admin.html">Login</a></h1>
+            <button class="mobile-only" onclick="onMenuClick()">
+                &#9776;
+            </button>
+            <div class="disabled" id="mobile-menu">
+                <div class="card mobile-menu-list">
+                    <div class="mobile-menu-link">
+                        <p class="no-margin"><a href="index.html">Home</a></p>
+                    </div>
+                    <div class="mobile-menu-link">
+                        <p class="no-margin" ><a href="products.html">Products</a></p>
+                    </div>
+                    <div class="mobile-menu-link">
+                        <p class="no-margin" ><a href="details.html">Details</a></p>
+                    </div>
+                    <div class="mobile-menu-link">
+                        <p class="no-margin"><a href="cart.html">Cart</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+             
+        
+        <!-- Main content area -->
+        <div class="main-content-wrapper">
+            <div class="header">
+                <h1>Available Products</h1>
+                <p>Whaddya buyin?</p>
+            </div>
+            <div class="gridItem">
+                <p>Eggshell Jacket</p>
+                <img class="img_Product" src="https://img.staticdj.com/3e1959ea3241fe2792b162ae2ad64474_750x.jpeg" alt="Eggshell_Jacket.img">
+                <p>$150.00</p>
+                <button onclick="onAdd('Eggshell Jacket', 150, 'https://img.staticdj.com/3e1959ea3241fe2792b162ae2ad64474_750x.jpeg')">add</button>
+                
+            </div>
+            <div class="gridItem">
+                <p>Vortex Shirt</p>
+                <img class="img_Product" src="https://litb-cgis.rightinthebox.com/images/640x853/202109/bps/product/inc/ekhoph1631789972391.jpg" alt="Vortex_Shirt.img">
+                <p>$25.00</p>
+                <button onclick="onAdd('Vortex Shirt', 25, 'https://litb-cgis.rightinthebox.com/images/640x853/202109/bps/product/inc/ekhoph1631789972391.jpg')">add</button>
+            </div>
+            <div class="gridItem">
+                <p>Hooded Vest</p>
+                <img class="img_Product" src="https://litb-cgis.rightinthebox.com/images/640x853/202201/bps/product/inc/tyuzax1642747554706.jpg" alt="Hooded_Vest.img">
+                <p>$45.00</p>
+                <button onclick="onAdd('Hooded Vest', 45, 'https://litb-cgis.rightinthebox.com/images/640x853/202201/bps/product/inc/tyuzax1642747554706.jpg')">add</button>
+            </div>
+            <div class="gridItem">
+                <p>Illusion Crew Neck</p>
+                <img class="img_Product" src="https://litb-cgis.rightinthebox.com/images/640x640/202106/bps/product/inc/mwmnzb1623224111728.jpg" alt="Illusion_Crew_Nect.img">
+                <p>$20.00</p>
+                <button  onclick="onAdd('Illusion Crew Neck', 20, 'https://litb-cgis.rightinthebox.com/images/640x640/202106/bps/product/inc/mwmnzb1623224111728.jpg')">add</button>
+            </div>
+            <div class="gridItem">
+                <p>RedEye Mask</p>
+                <img class="img_Product" src="https://cdn.shopify.com/s/files/1/0082/8787/9264/products/jpeg_7716d017-787f-4927-aacf-1270cff1c862.jpg?v=1673262336" alt="RedEye_Mask.img">
+                <p>$350.00</p>
+                <button onclick="onAdd('RedEye Mask', 350, 'https://cdn.shopify.com/s/files/1/0082/8787/9264/products/jpeg_7716d017-787f-4927-aacf-1270cff1c862.jpg?v=1673262336')">add</button>
+            </div>
+            <div class="gridItem">
+                <p>Buckle Cami Dress</p>
+                <img class="img_Product" src="https://statics.devilinspired.com/image/cache/catalog/products/VG-025/111-750x1000.jpg" alt="Buckle_Cami_Dress.img">
+                <p>$75.00</p>
+                <button  onclick="onAdd('Buckle Cami Dress', 75, 'https://statics.devilinspired.com/image/cache/catalog/products/VG-025/111-750x1000.jpg')">add</button>
+            </div>
+            <div class="gridItem">
+                <p>FlashStrike Cargo Pants</p>
+                <img class="img_Product" src="https://img.ltwebstatic.com/images3_pi/2021/06/15/162374297764d1a956ee43f16e3539eea6b3ab8aa6_thumbnail_600x.webp" alt="LightningStrike_Cargo_Pants.img">
+                <p>$35.00</p>
+                <button  onclick="onAdd('FlashStrike Cargo Pants', 35, 'https://img.ltwebstatic.com/images3_pi/2021/06/15/162374297764d1a956ee43f16e3539eea6b3ab8aa6_thumbnail_600x.webp')">add</button>
+            </div>
+            <div class="gridItem">
+                <p>Eva 01 FlyKicks</p>
+                <img class="img_Product" src="https://i.etsystatic.com/36175709/r/il/54bff8/4451970059/il_794xN.4451970059_h3pu.jpg" alt="Eva_01_FlyKicks.img">
+                <p>$300.00</p>
+                <button onclick="onAdd('Eva 01 FlyKicks', 300, 'https://i.etsystatic.com/36175709/r/il/54bff8/4451970059/il_794xN.4451970059_h3pu.jpg')">add</button>
+            </div>
+        </div>
+
+        <!-- Footer area -->
+        <div class="footer-wrapper">
+            
+            <h1 class="nav-label-left">www.flashthread.com</h1>
+            <p >copyright 2023</p>
+        </div>
+        <script>
+            function onMenuClick() {
+                var x = document.getElementById("mobile-menu");
+                if (x.className.includes("disabled")) {
+                    x.className = "enabled"
+                } else {
+                    x.className = "disabled"
+                }
+            }
+        </script>
+    </body>
+</html>
